@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">视频下载</string>
+    <string name="label_star">首页</string>
+    <string name="label_parnter">下载视频</string>
+    <string name="label_luck">视频列表</string>
+    <string name="label_me">设置</string>
+
+
+    <string name="about_app">账号:</string>
+    <string name="function">关于</string>
+    <string name="update">详情</string>
+    <string name="feedback">联系我</string>
+
+</resources>

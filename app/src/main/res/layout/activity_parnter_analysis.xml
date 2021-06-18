@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgyellow">
+    <include layout="@layout/title_layout"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/match_lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        android:layout_weight="0.8" />
+
+    <!--结果 匹配率 -->
+    <TextView
+        android:id="@+id/matchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="物质名称:"/>
+    <TextView
+        android:id="@+id/material_properties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="物质属性:" />
+    <TextView
+        android:id="@+id/database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="数据库类型:" />
+    <TextView
+        android:id="@+id/danger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="危险等级:" />
+
+
+
+
+
+
+
+</LinearLayout>

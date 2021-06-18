@@ -1,0 +1,2 @@
+rootProject.name='lmgp'
+include ':app'

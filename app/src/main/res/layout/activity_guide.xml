@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgyellow"
+    tools:context=".home.GuideActivity">
+
+    <!--账号 -->
+    <LinearLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom = "20dp"
+        android:layout_marginTop="240dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="4dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="账号:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/accountText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        />
+    </LinearLayout>
+
+    <!--密码 -->
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/accountLayout"
+        android:layout_marginBottom = "110dp"
+        android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="4dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="密码:"
+            android:textSize="20sp"
+           />
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_below ="@+id/passwordLayout"
+        android:textSize = "20dp"
+        android:background = "@color/darkyellow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆" />
+</RelativeLayout>
