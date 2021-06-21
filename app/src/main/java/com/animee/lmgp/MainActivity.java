@@ -180,11 +180,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.report:
+                        break;
 
-                        break;
-                    case R.id.update:
-                        Update();
-                        break;
                     case R.id.ReadReport:
                         lookPdf();
                         break;

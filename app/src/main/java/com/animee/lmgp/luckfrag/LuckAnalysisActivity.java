@@ -79,7 +79,7 @@ public class LuckAnalysisActivity extends AppCompatActivity implements View.OnCl
 
     private void initView(String title) {
         // 查找控件
-        luckLv = findViewById(R.id.luckanalysis_lv);
+
         nameTv = findViewById(R.id.title_tv);
         backIv = findViewById(R.id.title_iv_back);
         searchView = findViewById(R.id.sv);

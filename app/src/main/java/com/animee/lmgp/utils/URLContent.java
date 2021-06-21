@@ -10,8 +10,7 @@ import android.util.Base64;
 import android.util.Log;
 
 import com.animee.lmgp.MainActivity;
-import com.animee.lmgp.bean.RecordBean;
-import com.animee.lmgp.home.GuideActivity;
+
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -89,42 +88,7 @@ public class URLContent {
     }
 
 
-    /**
-     * 上传检测数据
-     * @param recordinfoBean
-     * @param handler
-     */
-    public static void RecordUpload(RecordBean.RecordinfoBean recordinfoBean, Handler handler){
-        try {
-            String urlEd = "/photo/Rocord";
 
-            String passwordBase64 = MainActivity.star_pref.getString("password", "");
-            byte[] decode = Base64.decode(passwordBase64, Base64.DEFAULT);
-            String password = new String(decode);
-            // The URL-encoded contend
-            // 正文，正文内容其实跟get的URL中 '? '后的参数字符串一致
-            String content = "&IMEI=" + URLEncoder.encode(recordinfoBean.getImei(), "UTF-8");
-
-            content += "&username=" + URLEncoder.encode(recordinfoBean.getUserAccount(), "UTF-8");
-
-            content += "&password=" + URLEncoder.encode(password, "UTF-8");
-
-            content += "&recordDataX=" + URLEncoder.encode(recordinfoBean.getRecordDataX(), "UTF-8");
-
-            content += "&recordDataY=" + URLEncoder.encode(recordinfoBean.getRecordDataY(), "UTF-8");
-
-            content += "&DataTime=" + URLEncoder.encode(FillPdfUtils.GetTimeData2String(recordinfoBean.getRecordTime()), "UTF-8");
-
-            PostThread(content,urlEd,handler);
-
-        }catch (Exception e){
-            Message msg = new Message();
-            msg.what=-1;
-            msg.obj=e;
-            handler.sendMessage(msg);
-        }
-
-    }
 
     public static void UpDateThread(Handler handler) {
         try {

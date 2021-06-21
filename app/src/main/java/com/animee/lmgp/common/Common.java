@@ -5,7 +5,6 @@ import com.animee.lmgp.utils.DBHelper;
 
 public class Common {
 
-    public static State STATE = State.UNUNITED; //初始为未连接
 
     public static  String DATABASE_NAME = "lmgp.db";  //数据库名称
 

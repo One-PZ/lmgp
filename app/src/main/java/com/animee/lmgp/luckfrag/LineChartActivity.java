@@ -43,7 +43,6 @@ public class LineChartActivity extends AppCompatActivity implements View.OnClick
     private void initView() {
         result = findViewById(R.id.result);
         match = findViewById(R.id.match);
-        remark = findViewById(R.id.remark);
         time = findViewById(R.id.time);
         lineChart = findViewById(R.id.lineChart);
 

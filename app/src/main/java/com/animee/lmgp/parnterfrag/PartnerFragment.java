@@ -39,10 +39,7 @@ public class PartnerFragment extends Fragment {
         luckGv = view.findViewById(R.id.luckfrag_gv);
         search=view.findViewById(R.id.sv);
 
-//       创建适配器对象
-        adapter = new LuckBaseAdapter(getContext(), DatabaseHome.MatterclassificationMap);
-//        设置适配器
-        luckGv.setAdapter(adapter);
+
 
 //        设置GridView每一项的监听事件
         setListener();

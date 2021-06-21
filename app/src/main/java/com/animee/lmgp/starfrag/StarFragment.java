@@ -114,24 +114,18 @@ public class StarFragment extends Fragment implements View.OnClickListener {
     private void initView(View view) {
 
 
-        spreadView = view.findViewById(R.id.spreadView);
+
         textView = view.findViewById(R.id.text);
 
         lineChart = view.findViewById(R.id.lineChart);
 
 
-        linearLayout = view.findViewById(R.id.CurveShow);
+
 
         result = view.findViewById(R.id.result);
         match = view.findViewById(R.id.match);
         staranalysis_tv_remark = view.findViewById(R.id.staranalysis_tv_remark);
 
-        //已连接
-        connectingsBtn = view.findViewById(R.id.connectingsBtn);
-        connectingsBtn.setOnClickListener(this::onClick);
-
-        tartingBtn = view.findViewById(R.id.tartingBtn);
-        tartingBtn.setOnClickListener(this::onClick);
 
         editText = view.findViewById(R.id.e2);
         view.findViewById(R.id.buton1).setOnClickListener(this::onClick);
@@ -213,9 +207,6 @@ public class StarFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.connectingsBtn: //
-
-                break;
             case R.id.buton1:   //
                 Python py = Python.getInstance();
 
